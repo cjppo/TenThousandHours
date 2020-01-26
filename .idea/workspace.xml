@@ -1,21 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f52fbf6-4ee8-45e9-9ff7-e9c3a0925cb5" name="Default Changelist" comment="" />
+    <list default="true" id="8f52fbf6-4ee8-45e9-9ff7-e9c3a0925cb5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cjppo/backend/war/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cjppo/backend/war/apicontrollor/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cjppo/backend/war/apicontrollor/ReadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cjppo/backend/war/service/DataService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="$MAVEN_REPOSITORY$" />
-        <option name="userSettingsFile" value="$USER_HOME$/.m2/settings.xml" />
+        <option name="userSettingsFile" value="/usr/share/maven/conf/settings.xml" />
       </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
     </option>
   </component>
   <component name="ProjectId" id="1WulppsN8V7dfCYztxC2521AwLg" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -23,6 +50,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -50,6 +78,14 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="794" y="265" width="374" height="575" key="#com.intellij.ide.util.MemberChooser" timestamp="1580011563072">
+      <screen x="53" y="27" width="1867" height="1053" />
+    </state>
+    <state x="794" y="265" width="374" height="575" key="#com.intellij.ide.util.MemberChooser/53.27.1867.1053@53.27.1867.1053" timestamp="1580011563072" />
+    <state x="507" y="296" width="424" height="484" key="FileChooserDialogImpl" timestamp="1580011270910">
+      <screen x="53" y="27" width="1867" height="1053" />
+    </state>
+    <state x="507" y="296" width="424" height="484" key="FileChooserDialogImpl/53.27.1867.1053@53.27.1867.1053" timestamp="1580011270910" />
     <state width="1821" height="278" key="GridCell.Tab.0.bottom" timestamp="1580007587779">
       <screen x="53" y="27" width="1867" height="1053" />
     </state>
@@ -66,5 +102,9 @@
       <screen x="53" y="27" width="1867" height="1053" />
     </state>
     <state width="1821" height="278" key="GridCell.Tab.0.right/53.27.1867.1053@53.27.1867.1053" timestamp="1580007587779" />
+    <state x="196" y="150" key="SettingsEditor" timestamp="1580013401879">
+      <screen x="53" y="27" width="1867" height="1053" />
+    </state>
+    <state x="196" y="150" key="SettingsEditor/53.27.1867.1053@53.27.1867.1053" timestamp="1580013401879" />
   </component>
 </project>
