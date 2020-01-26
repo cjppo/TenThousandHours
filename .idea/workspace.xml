@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f52fbf6-4ee8-45e9-9ff7-e9c3a0925cb5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cjppo/backend/war/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cjppo/backend/war/apicontrollor/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cjppo/backend/war/apicontrollor/ReadController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cjppo/backend/war/service/DataService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
