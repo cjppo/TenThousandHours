@@ -11,13 +11,25 @@ import org.springframework.stereotype.Component;
  * @create: 2020-03-16 17:43
  **/
 @Component
-public class UserBuilder {
+public class UserService {
 
     @Autowired
-    @Qualifier("MongoDataReposity")
+    @Qualifier("MongoDataReposityImpl")
     private IDataReposity dataReposity;
 
     public User buildUser(String userName) {
         return dataReposity.findByUserName(userName);
+    }
+
+    public User createUser(String userName, String pwd) {
+        User newUser = new User();
+        newUser.setPwd(pwd);
+        newUser.setUser(userName);
+        boolean isSuccess = dataReposity.saveOrUpdate(newUser);
+        if (isSuccess) {
+            return newUser;
+        }else {
+            return null;
+        }
     }
 }

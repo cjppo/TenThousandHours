@@ -9,7 +9,7 @@ import java.util.Calendar;
  * @author: jie_cao
  * @create: 2020-03-16 17:19
  **/
-@Document(collection = "tenthousandhoursdb")
+@Document(collection = "practices")
 public class PracticeEntity {
 
     @Id

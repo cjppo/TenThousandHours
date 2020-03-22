@@ -1,9 +1,13 @@
 package com.cjppo.backend.war.apicontrollor;
 
-import com.cjppo.backend.war.domain.User;
-import com.cjppo.backend.war.service.UserBuilder;
+import com.cjppo.backend.war.apimodel.read.ReadUserRequest;
+import com.cjppo.backend.war.apimodel.read.ReadUserResponse;
+import com.cjppo.backend.war.service.UserService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -12,10 +16,17 @@ import org.springframework.web.bind.annotation.RestController;
 public class ReadController {
 
     @Autowired
-    private UserBuilder userBuilder;
+    private UserService userBuilder;
+    private Logger logger = LoggerFactory.getLogger(ReadController.class);
 
     @PostMapping(value = "/user")
-    public User getUser(String uid) {
-        return userBuilder.buildUser(uid);
+    public ReadUserResponse getUser(@RequestBody ReadUserRequest request) {
+        ReadUserResponse response = new ReadUserResponse();
+        try {
+            response.setUser(userBuilder.buildUser(request.getUid()));
+        }catch (Exception ex) {
+            logger.error("readuser error", ex);
+        }
+        return response;
     }
 }

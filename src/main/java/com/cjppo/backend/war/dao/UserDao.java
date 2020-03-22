@@ -11,4 +11,5 @@ public interface UserDao extends PagingAndSortingRepository<UserEntity, String> 
     UserEntity findByUser(String user);
     @Override
     UserEntity save(UserEntity s);
+
 }

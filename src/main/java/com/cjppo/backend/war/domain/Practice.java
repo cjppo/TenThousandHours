@@ -1,5 +1,7 @@
 package com.cjppo.backend.war.domain;
 
+import org.springframework.data.annotation.Id;
+
 import java.util.Calendar;
 
 /**
@@ -8,7 +10,8 @@ import java.util.Calendar;
  **/
 public class Practice {
 
-    private String projectId;
+    @Id
+    private String practiceId;
 
     private String name;
 
@@ -16,12 +19,12 @@ public class Practice {
 
     private Calendar lastPracticeTime;
 
-    public String getProjectId() {
-        return projectId;
+    public String getPracticeId() {
+        return practiceId;
     }
 
-    public void setProjectId(String projectId) {
-        this.projectId = projectId;
+    public void setPracticeId(String practiceId) {
+        this.practiceId = practiceId;
     }
 
     public String getName() {

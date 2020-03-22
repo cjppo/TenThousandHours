@@ -9,7 +9,7 @@ import java.util.List;
  * @author: jie_cao
  * @create: 2020-03-16 17:07
  **/
-@Document(collection = "tenthousandhoursdb")
+@Document(collection = "user")
 public class UserEntity {
 
     @Id

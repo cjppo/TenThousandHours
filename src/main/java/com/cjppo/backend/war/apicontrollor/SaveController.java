@@ -2,7 +2,7 @@ package com.cjppo.backend.war.apicontrollor;
 
 import com.cjppo.backend.war.domain.Practice;
 import com.cjppo.backend.war.domain.User;
-import com.cjppo.backend.war.service.UserBuilder;
+import com.cjppo.backend.war.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class SaveController {
 
     @Autowired
-    private UserBuilder userBuilder;
+    private UserService userBuilder;
 
     @PostMapping(value = "/updatepracticetime")
     public boolean updatePracticeTime(String uid, String practiceId, Long practiceTime_in_minute) {
@@ -22,7 +22,7 @@ public class SaveController {
             return false;
         }
 
-        Practice practice = user.getPractices().stream().filter(r -> r.getProjectId().equalsIgnoreCase(practiceId))
+        Practice practice = user.getPractices().stream().filter(r -> r.getPracticeId().equalsIgnoreCase(practiceId))
                 .findFirst().orElse(null);
         if (practice != null) {
             practice.setLastingMinutes(practiceTime_in_minute);
