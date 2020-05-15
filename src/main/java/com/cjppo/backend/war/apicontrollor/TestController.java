@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TestController {
 
-
+    @CrossOrigin
     @GetMapping(value = "/show")
     public String getUser() {
         return "ok";

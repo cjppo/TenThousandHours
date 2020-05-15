@@ -15,6 +15,7 @@ public class SaveController {
     @Autowired
     private UserService userBuilder;
 
+    @CrossOrigin
     @PostMapping(value = "/updatepracticetime")
     public boolean updatePracticeTime(String uid, String practiceId, Long practiceTime_in_minute) {
         User user = userBuilder.buildUser(uid);

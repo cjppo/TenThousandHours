@@ -19,6 +19,7 @@ public class ReadController {
     private UserService userBuilder;
     private Logger logger = LoggerFactory.getLogger(ReadController.class);
 
+    @CrossOrigin
     @PostMapping(value = "/user")
     public ReadUserResponse getUser(@RequestBody ReadUserRequest request) {
         ReadUserResponse response = new ReadUserResponse();

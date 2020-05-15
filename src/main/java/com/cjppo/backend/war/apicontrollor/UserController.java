@@ -20,6 +20,7 @@ public class UserController {
     private UserService userService;
     private Logger logger = LoggerFactory.getLogger(UserController.class);
 
+    @CrossOrigin
     @PostMapping(value = "/login")
     public LoginResponse login(@RequestBody LoginRequest request) {
         LoginResponse response = new LoginResponse();
@@ -42,6 +43,7 @@ public class UserController {
         }
     }
 
+    @CrossOrigin
     @PostMapping(value = "/createuser")
     public CreateUserResponse create(@RequestBody CreateUserRequest request) {
         CreateUserResponse response = new CreateUserResponse();
