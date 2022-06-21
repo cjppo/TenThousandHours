@@ -23,7 +23,7 @@
         <skipTests>true</skipTests>
         <docker.host>http://192.168.3.101:2375</docker.host>
         <mybatis.version>3.4.6</mybatis.version>
-        <mysql-connector.version>8.0.15</mysql-connector.version>
+        <mysql-connector.version>8.0.28</mysql-connector.version>
         <spring-data-commons.version>2.1.5.RELEASE</spring-data-commons.version>
 
     </properties>
